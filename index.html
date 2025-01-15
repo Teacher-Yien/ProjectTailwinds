@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.2/dist/flowbite.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Responsive Navbar</title>
+</head>
+
+<body>
+    <div class="main-page bg-white relative animate__animated animate__zoomIn">
+        <div class="all-content-page bg-white h-auto w-11/12 m-auto">
+            <header class=" sticky top-0   z-50">
+                <nav class=" bg-white border-gray-200 dark:bg-gray-900 p-5">
+                    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto ">
+                        <!-- Logo and Phone Number -->
+                        <div class="flex items-center  rtl:space-x-reverse">
+                            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                                <i class="fa-solid fa-torii-gate text-2xl text-yellow-600"></i>
+                                <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">M&B Remodeling</span>
+                            </a>
+                            <a href="tel:+855965241398" class="text-gray-900 md:hidden">+855 965241398</a>
+                        </div>
+                        <!-- Mobile Menu Button -->
+                        <button data-collapse-toggle="mobile-menu" type="button"
+                            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                            aria-controls="mobile-menu" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
+                        </button>
+                        <!-- Navbar Links -->
+                        <div class="hidden w-full md:block md:w-auto " id="mobile-menu">
+                            <ul class=" font-medium flex flex-col p-4 md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-white shadow-lg md:shadow-none md:bg-transparent">
+                                <li><a href="index.html" class="block py-2 px-3 text-sm font-semibold text-yellow-700 hover:text-yellow-500">Home</a></li>
+                                <li><a href="about.html" class="block py-2 px-3 text-sm text-gray-400 hover:text-yellow-500">About</a></li>
+                                <li><a href="Services.html" class="block py-2 px-3 text-sm text-gray-400 hover:text-yellow-500">Services</a></li>
+                                <li><a href="Work.html" class="block py-2 px-3 text-sm text-gray-400 hover:text-yellow-500">Work</a></li>
+                                <li><a href="Contact.html" class="block py-2 px-3 text-sm text-gray-400 hover:text-yellow-500">Contact</a></li>
+                                <li class="hidden md:block"><a href="tel:+855965241398" class="block py-2 px-3 text-sm text-gray-400 hover:text-yellow-500">+855 965241398</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+            <section class="content-slide h-[100vh] bg-[url(image/1.png)]  bg-cover bg-no-repeat bg-fixed   ">
+                <div class="  content-box  h-[100%] w-[100%] p-11">
+                <div class=" grid grid-cols-2 gap-1">
+                    <div>
+                        <h1 class=" text-6xl font-bold  text-white ">Exceptional Home Remodeling & Renovations</h1>
+                        <button class=" text-gray-300 bg-white py-2 px-4 mt-[5rem]">Get A Free Estimate</button>
+                    </div>
+                </div>
+                </div>
+            </section>
+            <section class="leading-company h-[80vh] grid md:grid-cols-2 grid-cols-1 gap-[7rem] mt-[4rem] relative">
+                <div class="bg-cover bg-center w-full md:max-h-[500px] md:h-full h-[400px] bg-no-repeat bg-fixed bg-[url(image/2.png)] md:order-1 order-2" >
+                    <!-- Background Image -->
+                </div>
+                <div class="content-text flex items-center p-10 md:order-2 order-1">
+                    <div>
+                        <h1 class="text-5xl font-bold  drop-shadow-md">The Leading Bay Area Remodeling Company</h1>
+                        <p class="mt-6 text-lg text-gray-300 drop-shadow-md">
+                            I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font.
+                        </p>
+                        <button class="mt-10 bg-black text-gray-200 px-7 py-3 capitalize font-semibold hover:bg-yellow-500 transition duration-300 ease-in-out">More About Us</button>
+                    </div>
+                </div>
+            </section>
+            <section class=" mt-[5rem]">
+                <h1 class=" text-5xl text-center font-bold">Why Choose Us</h1>
+                <div class=" grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[8rem] mt-[5rem]">
+                    <div class=" text-center p-5 ">
+                        <h1 class=" text-2xl text-yellow-700 font-bold">Easy <br> Financing</h1>
+                        <p class=" mt-[3rem]">I'm a paragraph. Click here to add your own text</p>
+                    </div>
+                    <div class=" text-center p-5 ">
+                        <h1 class=" text-2xl text-yellow-700 font-bold">Free, At Home Consultations</h1>
+                        <p class=" mt-[3rem]">I'm a paragraph. Click here to add your own text</p>
+                    </div>
+                    <div class=" text-center p-5 ">
+                        <h1 class=" text-2xl text-yellow-700 font-bold">Award Winning Service</h1>
+                        <p class=" mt-[3rem]">I'm a paragraph. Click here to add your own text</p>
+                    </div>
+                    <div class=" text-center p-5 ">
+                        <h1 class=" text-2xl text-yellow-700 font-bold">Licensed & Insured</h1>
+                        <p class=" mt-[3rem]">I'm a paragraph. Click here to add your own text</p>
+                    </div>
+                </div>
+            </section>
+            <section class=" mt-[5rem]">
+                <h1 class=" text-5xl font-bold text-black text-center">Our Services Include</h1>
+                <div class=" xl:h-[100vh] grid xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-[1rem] mt-[5rem]">
+                    <div class=" relative">
+                        <img class=" h-full object-cover" src="image/2.png" alt="">
+                        <div class=" absolute inset-0 bg-black bg-opacity-20 w-full h-full flex justify-center items-center">
+                            <span class=" text-2xl text-white font-bold">Kitchens</span>
+                        </div>
+                    </div>
+                    <div class=" relative">
+                        <img class=" h-full object-cover" src="image/3.png" alt="">
+                        <div class=" absolute inset-0 bg-black bg-opacity-20 w-full h-full flex justify-center items-center">
+                            <span class=" text-2xl text-white font-bold">Bathrooms</span>
+                        </div>
+                    </div>
+                    <div class=" relative">
+                        <img class=" h-full object-cover" src="image/4.png" alt="">
+                        <div class=" absolute inset-0 bg-black bg-opacity-20 w-full h-full flex justify-center items-center">
+                            <span class=" text-2xl text-white font-bold">Interiors</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-[5rem] flex justify-center"><a href="#" class=" px-5 py-2 bg-black hover:bg-yellow-700 capitalize text-white">see All service</a></div>
+            </section>
+            <section class=" mt-[5rem]">
+                 <h1 class=" text-5xl font-bold text-center">Satisfied Customers</h1>
+                 <div class=" mt-[5rem]  h-[400px] w-4/5 m-auto grid xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[1rem]">
+                    <div class=" text-center p-5">
+                        <h1 class=" text-center"><i class="fa-solid fa-quote-right text-6xl"></i></h1>
+                        <div class=" mt-[3rem] ">
+                            <q >I'm a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are</q>
+                        </div>
+                        <h2 class=" mt-[2rem] text-2xl font-bold text-yellow-600">Dave Reddington</h2>
+                    </div>
+                    <div class=" text-center p-5">
+                        <h1 class=" text-center"><i class="fa-solid fa-quote-right text-6xl"></i></h1>
+                        <div class=" mt-[3rem] ">
+                            <q >I'm a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are</q>
+                        </div>
+                        <h2 class=" mt-[2rem] text-2xl font-bold text-yellow-600">Amelia Banks</h2>
+                    </div>
+                    <div class=" text-center p-5 lg:block  md:hidden">
+                        <h1 class=" text-center"><i class="fa-solid fa-quote-right text-6xl"></i></h1>
+                        <div class=" mt-[3rem] ">
+                            <q >I'm a testimonial. Click to edit me and add text that says something nice about you and your services. Let your customers review you and tell their friends how great you are</q>
+                        </div>
+                        <h2 class=" mt-[2rem] text-2xl font-bold text-yellow-600">Kenny Stutes</h2>
+                    </div>
+                 </div>
+            </section>
+        </div>
+        <footer class=" md:mt-[3rem]  mt-[45rem] bg-black w-full text-white">
+            <div class=" w-4/5 m-auto grid xl:grid-cols-2 gap-[3rem] py-[2rem]">
+                <div class=" grid gap-5">
+                    <h1 class=" text-5xl font-bold">Let's Discuss Your Next Project</h1>
+                    <p >Fill out the form, or call us to set up a free in-home consultation.</p>
+                    <p>Service Areas: San Francisco, Santa Clara, Alameda, San Mateo</p>
+                    <p>500 Terry Francine Street San Francisco, CA 94158</p>
+                    <p>info@mysite.com</p>
+                    <p>123-456-7890</p>
+                </div>
+                <div class=" ">
+                    <form action="" class=" grid  grid-cols-2 gap-2">
+                        <div class="box1 col-span-1 grid  gap-3 ">  
+                            <label class="text-gray-400 w-full" for="fname">First Name *</label>  
+                            <input type="text" id="fname" class=" bg-black" placeholder="Enter your first name" required>
+                            <label class="text-gray-400 w-full" for="email">Email *</label>  
+                            <input type="email" id="email" class=" bg-black" placeholder="Enter your email" required>  
+                        </div>
+                        <div class="box2 col-span-1 grid gap-3 ">
+                            <label class="text-gray-400" for="lname">Last Name *</label>  
+                            <input type="text" id="lname" class=" bg-black" placeholder="Enter your last name" required>
+                            <label class="text-gray-400" for="phone">Phone *</label>  
+                            <input type="tel" id="phone" class=" bg-black" placeholder="Enter your phone" required>
+                        </div>
+                        <div class=" col-span-2  gap-2">
+                            <label class="text-gray-400 w-full" for="address">Address *</label>  
+                            <input  type="text" id="address" class=" w-full bg-black col-span-2" placeholder="Enter your address" required>
+                            <label class="text-gray-400 w-full" for="address">Subject *</label>  
+                            <input  type="text" id="address" class=" w-full bg-black col-span-2" placeholder="Enter your address" required>
+                            <label for="mess">Message *</label> <br>
+                            <textarea rows="5"  class=" w-full bg-black "></textarea>
+                            <button class=" w-full bg-white text-gray-500 py-3">submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
